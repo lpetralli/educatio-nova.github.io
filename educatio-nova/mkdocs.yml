@@ -1,0 +1,33 @@
+site_name: Educatio Nova
+site_url: https://educatio-nova.github.io/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: pink
+    - scheme: slate
+      primary: teal
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+nav:
+  - Home: index.md
+  - Blog:
+      - "Bienvenida": blog/welcome.md
+      - "Primer artículo": blog/primer-articulo.md
+
+plugins:
+  - search
+  - blogging:
+      dirs: [blog]
+  - rss:
+      match_path: blog/.*
+      feed_title: "Educatio Nova - Blog"
+      length: 20
