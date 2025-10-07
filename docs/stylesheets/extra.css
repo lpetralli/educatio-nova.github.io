@@ -1,0 +1,11 @@
+.md-typeset .blog-list {
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 1rem;
+  }
+  
+  .md-typeset .blog-post {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+  }

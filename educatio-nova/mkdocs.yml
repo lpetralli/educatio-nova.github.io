@@ -3,25 +3,25 @@ site_url: https://educatio-nova.github.io/
 
 theme:
   name: material
+  icon:
+    logo: material/school
   palette:
     - scheme: default
-      primary: teal
-      accent: pink
+      primary: blue
+      accent: light blue
     - scheme: slate
-      primary: teal
-      accent: pink
+      primary: blue
+      accent: light blue
       toggle:
         icon: material/weather-night
         name: Cambiar a modo oscuro
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Inter
+    code: JetBrains Mono
 
 nav:
-  - Home: index.md
-  - Blog:
-      - "Bienvenida": blog/welcome.md
-      - "Primer artículo": blog/primer-articulo.md
+  - Inicio: index.md
+  - Publicaciones: publicaciones.md
 
 plugins:
   - search
@@ -31,3 +31,6 @@ plugins:
       match_path: blog/.*
       feed_title: "Educatio Nova - Blog"
       length: 20
+
+extra_css:
+  - stylesheets/extra.css
